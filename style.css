@@ -1,0 +1,400 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vh;
+	justify-content: center;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: radial-gradient(circle, rgb(131, 226, 172), rgb(228, 220, 95));
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	height: 100vh;
+	width: 100vw;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+h1 {
+	position: relative;
+	top: 25px;
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+}
+
+.main-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	justify-items: center;
+	flex-direction: column;
+	align-content: center;
+	height: 800px;
+	width: 100vw;
+}
+
+.btn-calc {
+	position: relative;
+	background-color: rgb(211, 211, 211);
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 90px;
+	height: 35px;
+	font-size: 25px;
+	margin-top: 5px;
+	margin-top: 10px;
+	margin-bottom: -29px;
+	border: solid 2px black;
+	border-radius: 15px;
+	box-shadow: 2px 5px rgba(0, 0, 0, 0.574);
+}
+
+.btn-calc:hover {
+	background-color: #a9a9a9;
+}
+
+.btn-calc:active {
+	background-color: #a9a9a9;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.574);
+	transform: translateY(4px);
+}
+
+.btn-reset {
+	position: relative;
+	left: 135px;
+	bottom: 20px;
+	display: flex;
+	background-color: rgb(211, 211, 211);
+	width: 100px;
+	height: fit-content;
+	font-size: 25px;
+	margin-top: 15px;
+	padding: 5px;
+	border: solid 2px black;
+	border-radius: 15px;
+	box-shadow: 2px 5px rgba(0, 0, 0, 0.574);
+}
+
+.btn-reset:hover {
+	background-color: #a9a9a9;
+}
+
+.btn-reset:active {
+	background-color: #a9a9a9;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.574);
+	transform: translateY(4px);
+}
+
+.btn-table {
+	position: relative;
+	left: 275px;
+	bottom: 210px;
+	display: flex;
+	background-color: rgb(211, 211, 211);
+	width: 100px;
+	height: fit-content;
+	font-size: 25px;
+	margin-top: 15px;
+	padding: 5px;
+	border: solid 2px black;
+	border-radius: 15px;
+	box-shadow: 2px 5px rgba(0, 0, 0, 0.57);
+}
+
+.btn-table:hover {
+	background-color: #a9a9a9;
+}
+
+.btn-table:active {
+	background-color: #a9a9a9;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.574);
+	transform: translateY(4px);
+}
+
+.main-calc {
+	position: relative;
+	top: 50px;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+}
+
+.buttonsall {
+	position: relative;
+	bottom: 75px;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: center;
+	margin-top: 15px;
+}
+.sumtable {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	top: 80px;
+	left: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	width: 400px;
+	height: fit-content;
+}
+
+.table-label {
+	background-color: rgb(8, 69, 34);
+}
+
+.label2 {
+	color: lightgrey;
+	background-color: rgb(8, 69, 34);
+}
+
+.label3 {
+	color: lightgrey;
+	background-color: rgb(8, 69, 34);
+}
+
+.table-sum tr td {
+	border: solid 2px rgb(154, 150, 150);
+	color: white;
+	padding-left: 5px;
+}
+
+.th {
+	color: white;
+}
+
+.tablesumlabel {
+	margin-top: 15px;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.table-vals {
+	background-color: rgb(47, 112, 75);
+}
+
+.opersum {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	left: 320px;
+	bottom: 35px;
+	height: 45px;
+	width: 80px;
+	background-color: rgb(134, 183, 131);
+	border: solid 2px rgb(154, 150, 150);
+	padding: 5px;
+}
+
+.sum-button {
+	position: relative;
+	left: 315px;
+	bottom: 20px;
+	justify-content: center;
+	background: rgb(211, 211, 211);
+	align-items: center;
+	width: fit-content;
+	display: flex;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 5px;
+	border-radius: 15px;
+	box-shadow: 2px 5px rgba(0, 0, 0, 0.574);
+}
+
+.sum-button:hover {
+	background-color: #a9a9a9;
+}
+
+.sum-button:active {
+	background-color: #a9a9a9;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.574);
+	transform: translateY(4px);
+}
+
+.calc-sign {
+	position: relative;
+	bottom: 87px;
+	left: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	width: 45px;
+	height: 45px;
+	font-size: 35px;
+	font-weight: 700;
+	border: solid 2px black;
+}
+
+.clear-table {
+	position: relative;
+	right: 20px;
+	bottom: 65px;
+	justify-content: center;
+	background: rgb(211, 211, 211);
+	align-items: center;
+	width: fit-content;
+	display: flex;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 5px;
+	border-radius: 15px;
+	box-shadow: 2px 5px rgba(0, 0, 0, 0.574);
+}
+
+.clear-table:hover {
+	background-color: #a9a9a9;
+}
+
+.clear-table:active {
+	background-color: #a9a9a9;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.574);
+	transform: translateY(4px);
+}
+
+.calc_buttons {
+	position: relative;
+	top: 25px;
+	left: 110px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	width: fit-content;
+	height: fit-content;
+}
+
+.op {
+	display: flex;
+	flex-direction: column;
+	width: 65px;
+	height: 65px;
+	font-size: 45px;
+	align-items: center;
+	border: solid 2px black;
+}
+
+.op:hover {
+	background-color: #a9a9a9;
+}
+
+.op:active {
+	background-color: #a9a9a9;
+	transform: translateY(1px);
+}
+
+.numbers {
+	position: relative;
+	top: 25px;
+	left: 110px;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 130px;
+	height: 325px;
+}
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 65px;
+	height: 65px;
+	font-size: 45px;
+	border: solid 2px black;
+}
+
+.btn:hover {
+	background-color: #a9a9a9;
+}
+
+.btn:active {
+	background-color: #a9a9a9;
+	transform: translateY(1px);
+}
+
+.numbera-label {
+	position: relative;
+	display: flex;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+.numbera {
+	position: relative;
+	display: flex;
+	font-size: 25px;
+	padding-left: 5px;
+	border: solid 2px black;
+}
+
+.numbera:focus {
+	cursor: crosshair;
+}
+
+.numberB-label {
+	position: relative;
+	display: flex;
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.numberb {
+	position: relative;
+	display: flex;
+	font-size: 25px;
+	padding-left: 5px;
+	border: solid 2px black;
+}
+
+.numberb:focus {
+	cursor: crosshair;
+}
+
+.numberb:active {
+	cursor: crosshair;
+}
+
+.wynik--label {
+	position: relative;
+	display: flex;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.wynik-label {
+	position: relative;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: white;
+	font-size: 35px;
+	font-weight: 700;
+	min-width: 45px;
+	width: fit-content;
+	height: 45px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: solid 2px black;
+	padding: 5px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Simple Calculdator</title>
+</head>
+
+<body>
+	<h1>WYKONAJ SWOJE OBLICZENIA 2</h1>
+	<div id="main-container" class="main-container">
+		<div id="main-calc" class="main-calc">
+			<label for="numbera" class="numbera-label">Podaj liczbę A:</label>
+			<input name="liczbaA" id="numbera" class="numbera numb-1" type="text" placeholder="Liczba A" />
+			<label for="numberB" class="numberB-label">Podaj liczbę B:</label>
+			<input name="liczbaB" id="numberB" class="numberb numb-2" type="text" placeholder="Liczba B" />
+			<input name="btn-calc" id="btn-calc" class="btn-calc" type="button" value="Oblicz" />
+			<p name="calc-sign" class="calc-sign" id="calc-sign" type="text"></p>
+			<label for="wynik-label" class="wynik--label" type="number">Wynik:</label>
+			<p id="wynik-label" class="wynik-label"></p>
+			<input name="btn-reset" id="btn-reset" class="btn-reset" type="button" value="Czyść" />
+			<input name="btn-tabela" id="btn-table" class="btn-table" type="button" value="Tabela" />
+			<div class="buttonsall">
+				<div id="calc_buttons" class="calc_buttons">
+					<input name="btn-dod" id="btn-dod" class="op op--1" type="button" value="+" />
+					<input name="btn-od" id="btn-od" class="op op--2" type="button" value="-" />
+					<input name="btn-mnoz" id="btn-mnoz" class="op op--3" type="button" value="*" />
+					<input name="btn-dziel" id="btn-dziel" class="op op--4" type="button" value="/" />
+					<input name="btn-poteg" id="btn-poteg" class="op op--5" type="button" value="A&sup2" />
+				</div>
+				<div id="numbers" class="numbers">
+					<input name="btn-zero" id="btn-0" class="btn btn--0" type="button" value="0" />
+					<input name="btn-one" id="btn-1" class="btn btn--1" type="button" value="1" />
+					<input name="btn-two" id="btn-2" class="btn btn--2" type="button" value="2" />
+					<input name="btn-three" id="btn-3" class="btn btn--3" type="button" value="3" />
+					<input name="btn-four" id="btn-4" class="btn btn--4" type="button" value="4" />
+					<input name="btn-five" id="btn-5" class="btn btn--5" type="button" value="5" />
+					<input name="btn-six" id="btn-6" class="btn btn--6" type="button" value="6" />
+					<input name="btn-seven" id="btn-7" class="btn btn--7" type="button" value="7" />
+					<input name="btn-eight" id="btn-8" class="btn btn--8" type="button" value="8" />
+					<input name="btn-nine" id="btn-9" class="btn btn--9" type="button" value="9" />
+				</div>
+				<div class="sumtable">
+					<table class="table-sum" id="tablesum">
+						<th class="label2">Wykonane działanie</th>
+						<th class="label3">Suma</th>
+					</table>
+					<label for="opersum" id="tablesumlabel" class="tablesumlabel">Suma obliczeń:</label>
+					<span class="opersum" id="opersum"></span>
+					<button class="sum-button">Suma</button>
+					<button class="clear-table">Wyczyść podsumowanie</button>
+				</div>
+			</div>
+		</div>
+		<script src="./script.js" type="module"></script>
+		<script src="./functions.js" type="module"></script>
+</body>
+</html>
